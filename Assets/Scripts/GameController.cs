@@ -116,22 +116,23 @@ public class GameController : MonoBehaviour {
 		}
 		grid = new GameObject[4,4];
 		GameObject clone = new GameObject();
-		grid [h, v] = clone;
+		//grid [h, v] = clone;
 		int i = 0;
 		for(int y = 0; y < 4; y++)
 		{
 			for(int x = 0; x < 4; x++)
-			{
-
-				if(checkmas[i] >= 0)
-				{
-					grid[x,y] =	Instantiate(cells[checkmas[i]],position[x,y],Quaternion.identity) as GameObject;
-					grid[x,y].name = "ID-"+i;
-					grid[x,y].transform.parent = transform;
+			{		
+				int j = checkmas [i];
+				if (j>=0) {
+					grid [x, y] =	Instantiate (cells [j], position [x, y], Quaternion.identity) as GameObject;
+					grid [x, y].name = "ID-" + i;
+					grid [x, y].transform.parent = transform;
 				}
-				i++;
+					i++;
 			}
 		}
+		//Destroy(clone);
+
 	}
 
 	void CreatePuzzle()
