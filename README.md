@@ -3,7 +3,7 @@ Fifteen is a sliding puzzle that consists of a frame of numbered square tiles in
 
 This is classic fifteen puzzle game with 4x4 field.
 
-![](https://i.imgur.com/am2mRf1.png =250x)
+![](https://i.imgur.com/am2mRf1.png)
 
 
 ## Rules
@@ -14,11 +14,11 @@ This is classic fifteen puzzle game with 4x4 field.
 4. Exceptions, when player can't win the game are processed.
 
 
-![](https://i.imgur.com/1paNpXU.png =250x)
+![](https://i.imgur.com/1paNpXU.png)
 
 ## Interface
 Interface is very simple, player will see:
-![](https://i.imgur.com/AiR1sT8.png =250x)
+![](https://i.imgur.com/AiR1sT8.png)
 
 1. Quit button - exit game.
 2. Finish text - notification that puzzle was solved
